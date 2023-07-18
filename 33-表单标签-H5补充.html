@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>35-表单标签-H5补充</title>
+</head>
+<body>
+<!--
+placeholder
+<input type="text" placeholder="请输入用户名">
+用于指定input输入框的占位符号, 特点: 用户输入数据之后占位符号会自动消失
+
+autofocus
+<input type="text" autofocus>
+用于指定默认让哪一个输入框获取焦点, 特点: 不能同时让多个输入框获取焦点
+
+multiple
+<input type="file" multiple>
+type="file" 就是告诉浏览器, 当前的input输入框是需要选择文件
+特点: 默认情况下只能选择一个文件
+如果在input标签中添加一个multiple属性, 就可以让input同时选择多个文件
+
+autocomplete
+<input type="text" autocomplete="off">
+记录用户提交过的数据, 注意点: input输入框必须有name属性才能记录, 并且只有提交之后才能记录
+
+required
+<input type="text" required>
+强制用户输入内容, 如果没有输入内容不能提交表单
+
+accesskey
+<input type="text" accesskey="s">
+可以通过配置快捷键让输入框获取焦点
+快捷键就是 Alt + 指定的符号
+-->
+<form>
+    <!--<input type="text" placeholder="请输入账号"><br>-->
+    <!--<input type="text" autofocus><br>-->
+    <!--<input type="text" accesskey="o"><br>-->
+    <!--<input type="file" multiple><br>-->
+    <!--<input type="text" required><br>-->
+    <input type="text" autocomplete name="tile">
+    <input type="submit">
+</form>
+</body>
+</html>
